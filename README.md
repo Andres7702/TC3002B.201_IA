@@ -6,4 +6,5 @@ Las imagenes fueron separadas en carpetas distintas segun sus clases y tambien s
 
 
 [Link al dataset en Kaggle](https://www.kaggle.com/datasets/warcoder/mario-vs-wario)
+
 [Link al dataset en drive](https://drive.google.com/drive/folders/1pBxok6BRC7E5KhjFZRKpTrEKhaHutAQP?usp=sharing)
