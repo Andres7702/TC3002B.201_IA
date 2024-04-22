@@ -1,10 +1,13 @@
 # TC3002B.201_IA
 
-El siguiente data set fue obtenido de Kaggle y contiene imagenes de dos juegos de la consola gameboy. Uno es el mario land 2 y otro es wario land. Las imagenes de cada categoria muestran a su respectivo personaje principal en cada imagen y se tratara de reconocer cual es cual.
+El siguiente data set fue obtenido de Kaggle y contiene imagenes de tomates comprados en un mercado de egipto. Dichos tomates despues fueron clasificados en tomates maduros, no mamduros y tomates rechazados. Esto basandose en los estanderes impuestos por el Departamento de Agricultura de los Estados Unidos (USDA).
 
 Las imagenes fueron separadas en carpetas distintas segun sus clases y tambien separadas en carpetas para realizar el entrenamiento de la IA y para hacer el testing respetando la regla de 80% y 20%.
 
 
-[Link al dataset en Kaggle](https://www.kaggle.com/datasets/warcoder/mario-vs-wario)
 
-[Link al dataset en drive](https://drive.google.com/drive/folders/1pBxok6BRC7E5KhjFZRKpTrEKhaHutAQP?usp=sharing)
+[Link al dataset en Kaggle](https://www.kaggle.com/datasets/nexuswho/tomatofruits)
+
+[Link al dataset en drive](https://drive.google.com/drive/folders/12cqsCAiacAMyk3WtWODylPf7yVJtRhJg?usp=drive_link)
+
+[Link al archivo del modelo](https://drive.google.com/file/d/1sAPm0lo1A1zdsf6YKw4vCTa-BFluABLH/view?usp=sharing)
