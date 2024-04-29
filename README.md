@@ -1,4 +1,4 @@
-
+[Link al modelo](https://drive.google.com/file/d/1A5Lscz6Fi07jTwd_C8xLV3812EY1rUby/view?usp=sharing)
 
 # TC3002B.201_IA
 
