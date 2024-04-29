@@ -1,6 +1,6 @@
 # TC3002B.201_IA
 
-##Data Set
+## Data Set
 
 El siguiente data set fue obtenido de Kaggle y contiene imagenes de tomates comprados en un mercado de egipto. Dichos tomates despues fueron clasificados en tomates maduros, no mamduros y tomates rechazados. Esto basandose en los estanderes impuestos por el Departamento de Agricultura de los Estados Unidos (USDA).
 
@@ -10,11 +10,11 @@ Cada clase contiene alrededor de 800 fotos y se eliminaron algunas fotos que est
 
 [Link al dataset en drive](https://drive.google.com/drive/folders/12cqsCAiacAMyk3WtWODylPf7yVJtRhJg?usp=drive_link)
 
-##Preprosesamiento
+## Preprosesamiento
 
 Para el preprosesamiento de imagenes se normalizaron los datos para que todas tuvieran 224 x 224 pixeles y se hizo un zoom para que la el tomate ocupara la mayor parte la imagen. No se le aplico ningun filtro a la imagen ya que se observo que el modelo aprendia mejor dejando los colores del tomate.
 
-##Modelo
+## Modelo
 
 El modelo que utilice fue un CNN comunmente utilizado para problemas de image classification y para mi problema a resolver tuvo un accuracy de 83 por ciento. Viendo los resultados la mayoria de los errores ocurren en la clase "ripe" donde confunde 47 entradas por tomates de la clase reject.
 
@@ -24,6 +24,24 @@ El modelo tiene 3 capas convolutivas que se encargan de extraer las caracterisit
 
 [Link al paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8756165)
 
-##Cambios al modelo original
+## Cambios al modelo original
 
-Originalmente se tenia un modelo que tenia menos capas densas y no hacia el dropout. Dicho modelo tenia
+Originalmente se tenia un modelo que tenia menos capas densas y no hacia el dropout.
+
+<img width="631" alt="Screen Shot 2024-04-28 at 11 38 46 p m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/e8d763a1-a154-464e-a26a-8d62cc8a6c13">
+
+Este tenia un accuracy de casi 83 por ciento en el entrenamiento y mantenia dicho rendimiento en los casos de prueba
+
+<img width="847" alt="Screen Shot 2024-04-28 at 11 35 42 p m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/ca425fa4-3d45-4820-bb9d-ec9f06e83a41">
+
+<img width="178" alt="Screen Shot 2024-04-28 at 11 35 51 p m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/3c8e58b0-66a1-44de-8851-2419956bab36">
+
+Sin embargo se notaba que habia un comportamiento raro en los resultados ya que, aunque podia clasificar a la perfeccion los tomates que no estan maduros, tenia un poco de problemas clasificando los tomates defectuosos y los maduros. 
+
+<img width="207" alt="Screen Shot 2024-04-28 at 11 34 56 p m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/34c01183-a0f7-4cc2-aede-795d1a34b985">
+
+Segun mi observación esto se debia a que habia fotos de tomates defectuosos que parecian tomates maduros. Esto es porque las fotos eran de tomates vistos de diferentes angulos y aunque de un alguno el tomate claramente estaba defectuoso de otro angulo no y esto confundia mucho al modelo.
+
+Lo que se hizo para mejorar este modelo fue eliminar las fotos de esos tomates que confundian al modelo, hacer data augmentation triplicando los datos con los que entrenaria la IA y agregar mas capas al modelo para hacerlo un poco mas complejo.
+
+## Resultados
