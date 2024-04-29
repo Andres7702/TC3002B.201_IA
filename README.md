@@ -45,3 +45,20 @@ Segun mi observación esto se debia a que habia fotos de tomates defectuosos que
 Lo que se hizo para mejorar este modelo fue eliminar las fotos de esos tomates que confundian al modelo, hacer data augmentation triplicando los datos con los que entrenaria la IA y agregar mas capas al modelo para hacerlo un poco mas complejo.
 
 ## Resultados
+
+Este nuevo modelo tuvo un accuracy del 87 por ciento durante el entrenamiento y casi 85 por ciento en las pruebas. Junto con la grafica del validation podemos ver que el modelo no esta teniendo overfit.
+
+<img width="858" alt="Screen Shot 2024-04-29 at 12 11 06 a m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/21155aff-c5bc-4c77-bd63-205c7d715eab">
+
+
+<img width="188" alt="Screen Shot 2024-04-29 at 12 12 36 a m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/e90fba06-dd8a-4d6a-bc2f-7a3d40a16a3e">
+
+En las pruebas podemos ver que el modelo aun tiene un poco de problema identificando entre los tomates maduros y defectuosos, pero el error es un poco menor.
+
+<img width="177" alt="Screen Shot 2024-04-29 at 12 15 13 a m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/485621d5-7482-402e-bd9d-86b0bcace0d7">
+
+<img width="1141" alt="Screen Shot 2024-04-29 at 12 15 46 a m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/6016949a-1e39-4b8a-884e-4b7a645fc557">
+
+Al pasarle una foto mia de un tomate que yo compre podemos ver que lo clasifico de manera correcta.
+
+<img width="459" alt="Screen Shot 2024-04-29 at 12 16 32 a m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/8daa6212-e594-4a56-bf7d-88b54424fe54">
