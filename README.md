@@ -24,8 +24,6 @@ El modelo tiene 3 capas convolutivas que se encargan de extraer las caracterisit
 
 [Link al archivo del modelo](https://drive.google.com/file/d/1sAPm0lo1A1zdsf6YKw4vCTa-BFluABLH/view?usp=sharing)
 
-[Link al paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8756165)
-
 ## Cambios al modelo original
 
 Originalmente se tenia un modelo que tenia menos capas densas y no hacia el dropout.
@@ -64,3 +62,10 @@ En las pruebas podemos ver que el modelo aun tiene un poco de problema identific
 Al pasarle una foto mia de un tomate que yo compre podemos ver que lo clasifico de manera correcta.
 
 <img width="459" alt="Screen Shot 2024-04-29 at 12 16 32 a m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/8daa6212-e594-4a56-bf7d-88b54424fe54">
+
+
+## Referencias:
+
+X. Lei, H. Pan and X. Huang, "A Dilated CNN Model for Image Classification," in IEEE Access, vol. 7, pp. 124087-124095, 2019, doi: 10.1109/ACCESS.2019.2927169.
+keywords: {Convolution;Kernel;Data models;Computational modeling;Training;Feature extraction;Image classification;Image classification;CNN;dilated convolution;hybrid dilated CNN},
+[Link al paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8756165)
