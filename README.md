@@ -63,6 +63,9 @@ Al pasarle una foto mia de un tomate que yo compre podemos ver que lo clasifico 
 
 <img width="459" alt="Screen Shot 2024-04-29 at 12 16 32 a m" src="https://github.com/Andres7702/TC3002B.201_IA/assets/74391630/8daa6212-e594-4a56-bf7d-88b54424fe54">
 
+## Conclusiones
+
+Al evaluar imagenes externas con el modelo tiene resultados variantes. Las imagenes con tomates no maduros las clasifica sin ningun problema, pero al igual que en el entrenamiento, testeo y eveluación, al evaluar imagenes de tomates maduros o rechazados el modelo tiende a equivocarse mas seguido, especialmente si se muestran imagenes de muchos tomates juntos o con un fondo muy ruidoso. Esto tiene sentido ya que las imagenes con las que fue entrenado el modelo todas fueron muy similares, con las mismas condiciones de luz, fondo y centrado del tomate. Para mejorar el modelo podria conseguirse un data set que contenga fotos de los tomates con una gama mas amplia de variables o hacer que el preprocesado de las imagenes ignore el fondo.
 
 ## Referencias:
 
